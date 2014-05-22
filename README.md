@@ -1,4 +1,6 @@
-css-mcfc-badge
+M.C.F.C. Crest - A CSS Experiment
 ==============
 
-M.C.F.C Crest made in CSS - Inspired by CSS Tardis
+Inspired by [CSS Tardis](http://www.csstardis.co.uk/), the M.C.F.C Club badge made in just CSS. (Work in progress)
+
+Live demo [here](http://www.willhawker.com/sandbox/mcfc-crest-a-css-experiment)
