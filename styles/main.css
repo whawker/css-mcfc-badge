@@ -254,9 +254,9 @@ body {
 	left: 0;
 	height: 4vw;
 	width: 50%;
-	-moz-transform-origin-x: 100%;
-	-webkit-transform-origin-x: 100%;
-	transform-origin-x: 100%;
+	-moz-transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
 }
 
 .banner-side:before {
@@ -474,7 +474,7 @@ body {
 #banner .char11 {
 	-moz-transform: rotate(-3.5deg);
 	-webkit-transform: rotate(-3.5deg);
-	transform: rotate(-2deg);
+	transform: rotate(-3.5deg);
 }
 
 #banner .char12 {
