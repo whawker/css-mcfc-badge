@@ -123,7 +123,7 @@ body {
 
 #shield {
 	height: calc(15vw * 1.1667);
-	margin: 10vw auto 1vw;
+	margin: 10vw auto 0.3vw;
 	position: relative;
 	width: 15vw;
 	z-index: 0;
@@ -207,10 +207,191 @@ body {
 }
 
 #banner {
-	height: 20vw;
+	height: 4vw;
 	margin: 0 auto;
 	position: relative;
-	width: 30vw;
+	width: 21vw;
+}
+
+#banner:before, #banner:after, 
+#banner div:before, #banner div:after {
+	content: '';
+	border: 0.3vw solid black;
+	border-radius: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+#banner:before, #banner:after {
+	clip: rect(23vw, 27.5vw, 36vw, 8.5vw);
+	height: 36vw;
+	width: 36vw;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-moz-transform: translate(-50%, -100%);
+	-webkit-transform: translate(-50%, -100%);
+	transform: translate(-50%, -100%);
+	z-index: 4;
+}
+
+#banner:after {
+	background: white;
+	clip: rect(39vw, 32vw, 43vw, 12vw);
+	height: 42vw;
+	width: 44vw;
+	-moz-transform: translate(-50%, -90%);
+	-webkit-transform: translate(-50%, -90%);
+	transform: translate(-50%, -90%);
+	z-index: 2;
+}
+
+.banner-side {
+	position: absolute;
+	top: -2.75vw;
+	left: 0;
+	height: 4vw;
+	width: 50%;
+	-moz-transform-origin-x: 100%;
+	-webkit-transform-origin-x: 100%;
+	transform-origin-x: 100%;
+}
+
+.banner-side:before {
+	clip: rect(0, 0.8vw, 0.9vw, 0);
+	height: 1.6vw;
+	width: 2.6vw;
+	-moz-transform: rotate(32deg);
+	-webkit-transform: rotate(32deg);
+	transform: rotate(32deg);
+}
+
+.banner-side:after {
+	clip: rect(14.9vw, 5vw, 19.1vw, 2vw);
+	height: 20vw;
+	width: 5vw;
+	bottom: -35%;
+	right: 93%;
+}
+
+.outer {
+	height: 34%;
+	width: 40%;
+	position: absolute;
+	top: 4.6vw;
+	left: -1.1vw;	
+	-moz-transform: rotate(23deg);
+	-webkit-transform: rotate(23deg);
+	transform: rotate(23deg);
+}
+
+.outer:before {
+	background: #B2B2B2;
+	clip: rect(0, 2.3vw, 2vw, 0);
+	height: 100%;
+	width: 75%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#banner .outer:after {
+	background: #B2B2B2;
+	border: none;
+	border-right: 0.3vw solid black;
+	border-radius: 0;
+	height: 100%;
+	width: 55%;
+	top: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.inner {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	right: 73%;
+}
+
+.inner:before {
+	background: white;
+	clip: rect(0, 2.75vw, 1.25vw, 0.75vw);
+	height: 1.3vw;
+	width: 2.75vw;
+	-moz-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+	transform: rotate(15deg);
+	top: 45%;
+	right: 0.2vw;
+	z-index: 1;
+}
+
+.inner:after {
+	display: none;
+}
+
+.tail-bottom {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	right: 75%;
+	top: 100%;
+}
+
+.tail-bottom:before {
+	clip: rect(0, 6.5vw, 2vw, 0.3vw);
+	height: 4vw;
+	width: 8vw;
+	right: 0;
+	top: 2.35vw;
+}
+
+.tail-bottom:after {
+	clip: rect(0, 3.5vw, 2vw, 0.3vw);
+	height: 4vw;
+	width: 8vw;
+	right: 0;
+	top: 2.35vw;
+	-moz-transform: rotate(-29deg);
+	-webkit-transform: rotate(-29deg);
+	transform: rotate(-29deg);
+	-moz-transform-origin: 0.1vw 1.2vw;
+	-webkit-transform-origin: 0.1vw 1.2vw;
+	transform-origin: 0.1vw 1.2vw;
+}
+
+.tail-top {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	right: 75%;
+	top: 25%;
+}
+
+.tail-top:before {
+	clip: rect(0, 3.3vw, 1vw, 0.3vw);
+	height: 2vw;
+	width: 4vw;
+	right: 45%;
+	top: 90%;
+}
+
+.tail-top:after {
+	clip: rect(0, 7vw, 2vw, 1.5vw);
+	height: 12vw;
+	width: 12vw;
+	left: 6%;
+	top: 50%;
+}
+
+#banner-right {
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 
 #banner span {
@@ -218,62 +399,64 @@ body {
 	font-family: 'Norican', 'Monotype Corsiva', Corsiva, serif;
 	font-size: 2.5vw;
 	font-weight: bold;
-	height: 3vw;
+	height: 4vw;
+	line-height: 4.2vw;
 	width: 1vw;
 	position: absolute;
 	left: calc(50% - 0.5vw);
 	top: 0;
-	-moz-transform-origin: 50% -40vw;
-	-webkit-transform-origin: 50% -40vw;
-	transform-origin: 50% -40vw;
+	-moz-transform-origin: 50% -18vw;
+	-webkit-transform-origin: 50% -18vw;
+	transform-origin: 50% -18vw;
+	z-index: 3;
 }
 
 #banner .char1 {
-	-moz-transform: rotate(14deg);
-	-webkit-transform: rotate(14deg);
-	transform: rotate(14deg);
+	-moz-transform: rotate(26deg);
+	-webkit-transform: rotate(26deg);
+	transform: rotate(26deg);
 }
 
 #banner .char2 {
-	-moz-transform: rotate(12deg);
-	-webkit-transform: rotate(12deg);
-	transform: rotate(12deg);
+	-moz-transform: rotate(22deg);
+	-webkit-transform: rotate(22deg);
+	transform: rotate(22deg);
 }
 
 #banner .char3 {
+	-moz-transform: rotate(18deg);
+	-webkit-transform: rotate(18deg);
+	transform: rotate(18deg);
+}
+
+#banner .char4 {
+	-moz-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
+#banner .char5 {
+	-moz-transform: rotate(12.2deg);
+	-webkit-transform: rotate(12.2deg);
+	transform: rotate(12.2deg);
+}
+
+#banner .char6 {
 	-moz-transform: rotate(10deg);
 	-webkit-transform: rotate(10deg);
 	transform: rotate(10deg);
 }
 
-#banner .char4 {
-	-moz-transform: rotate(8.5deg);
-	-webkit-transform: rotate(8.5deg);
-	transform: rotate(8.5deg);
-}
-
-#banner .char5 {
-	-moz-transform: rotate(7.2deg);
-	-webkit-transform: rotate(7.2deg);
-	transform: rotate(7.2deg);
-}
-
-#banner .char6 {
-	-moz-transform: rotate(6deg);
-	-webkit-transform: rotate(6deg);
-	transform: rotate(6deg);
-}
-
 #banner .char7 {
-	-moz-transform: rotate(4deg);
-	-webkit-transform: rotate(4deg);
-	transform: rotate(4deg);
+	-moz-transform: rotate(6.7deg);
+	-webkit-transform: rotate(6.7deg);
+	transform: rotate(6.7deg);
 }
 
 #banner .char8 {
-	-moz-transform: rotate(3deg);
-	-webkit-transform: rotate(3deg);
-	transform: rotate(3deg);
+	-moz-transform: rotate(4.5deg);
+	-webkit-transform: rotate(4.5deg);
+	transform: rotate(4.5deg);
 }
 
 #banner .char9 {
@@ -289,55 +472,55 @@ body {
 }
 
 #banner .char11 {
-	-moz-transform: rotate(-2deg);
-	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-3.5deg);
+	-webkit-transform: rotate(-3.5deg);
 	transform: rotate(-2deg);
 }
 
 #banner .char12 {
-	-moz-transform: rotate(-4deg);
-	-webkit-transform: rotate(-4deg);
-	transform: rotate(-4deg);
+	-moz-transform: rotate(-6deg);
+	-webkit-transform: rotate(-6deg);
+	transform: rotate(-6deg);
 }
 
 #banner .char13 {
-	-moz-transform: rotate(-5.5deg);
-	-webkit-transform: rotate(-5.5deg);
-	transform: rotate(-5.5deg);
+	-moz-transform: rotate(-8.5deg);
+	-webkit-transform: rotate(-8.5deg);
+	transform: rotate(-8.5deg);
 }
 	
 #banner .char14 {
-	-moz-transform: rotate(-8deg);
-	-webkit-transform: rotate(-8deg);
-	transform: rotate(-8deg);
+	-moz-transform: rotate(-12deg);
+	-webkit-transform: rotate(-12deg);
+	transform: rotate(-12deg);
 }
 				
 #banner .char15 {
-	-moz-transform: rotate(-9.5deg);
-	-webkit-transform: rotate(-9.5deg);
-	transform: rotate(-9.5deg);
-}
-							
-#banner .char16 {
-	-moz-transform: rotate(-11deg);
-	-webkit-transform: rotate(-11deg);
-	transform: rotate(-11deg);
-}
-										
-#banner .char17 {
-	-moz-transform: rotate(-12.5deg);
-	-webkit-transform: rotate(-12.5deg);
-	transform: rotate(-12.5deg);
-}
-													
-#banner .char18 {
-	-moz-transform: rotate(-13.5deg);
-	-webkit-transform: rotate(-13.5deg);
-	transform: rotate(-13.5deg);
-}
-																
-#banner .char19 {
 	-moz-transform: rotate(-14.5deg);
 	-webkit-transform: rotate(-14.5deg);
 	transform: rotate(-14.5deg);
+}
+							
+#banner .char16 {
+	-moz-transform: rotate(-17.5deg);
+	-webkit-transform: rotate(-17.5deg);
+	transform: rotate(-17.5deg);
+}
+										
+#banner .char17 {
+	-moz-transform: rotate(-20.4deg);
+	-webkit-transform: rotate(-20.4deg);
+	transform: rotate(-20.4deg);
+}
+													
+#banner .char18 {
+	-moz-transform: rotate(-22.5deg);
+	-webkit-transform: rotate(-22.5deg);
+	transform: rotate(-22.5deg);
+}
+																
+#banner .char19 {
+	-moz-transform: rotate(-24.5deg);
+	-webkit-transform: rotate(-24.5deg);
+	transform: rotate(-24.5deg);
 }
