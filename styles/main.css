@@ -225,7 +225,7 @@ body {
 }
 
 #banner:before, #banner:after {
-	clip: rect(23vw, 27.5vw, 36vw, 8.5vw);
+	clip: rect(33.15vw, 27.5vw, 36vw, 8.5vw);
 	height: 36vw;
 	width: 36vw;
 	position: absolute;
@@ -260,7 +260,7 @@ body {
 }
 
 .banner-side:before {
-	clip: rect(0, 0.8vw, 0.9vw, 0);
+	clip: rect(0, 0.8vw, 1vw, 0);
 	height: 1.6vw;
 	width: 2.6vw;
 	-moz-transform: rotate(32deg);
@@ -277,8 +277,8 @@ body {
 }
 
 .outer {
-	height: 34%;
-	width: 40%;
+	height: 33%;
+	width: 39%;
 	position: absolute;
 	top: 4.6vw;
 	left: -1.1vw;	
@@ -289,7 +289,7 @@ body {
 
 .outer:before {
 	background: #B2B2B2;
-	clip: rect(0, 2.3vw, 2vw, 0);
+	clip: rect(0, 1.4vw, 2vw, 0);
 	height: 100%;
 	width: 75%;
 	top: 0;
@@ -299,11 +299,10 @@ body {
 
 #banner .outer:after {
 	background: #B2B2B2;
-	border: none;
-	border-right: 0.3vw solid black;
+	border-width: 0 0.3vw 0.3vw 0;
 	border-radius: 0;
 	height: 100%;
-	width: 55%;
+	width: 70%;
 	top: 0;
 	right: 0;
 	z-index: 0;
@@ -319,13 +318,13 @@ body {
 
 .inner:before {
 	background: white;
-	clip: rect(0, 2.75vw, 1.25vw, 0.75vw);
-	height: 1.3vw;
+	clip: rect(0, 2.75vw, 1.25vw, 1.3vw);
+	height: 1.1vw;
 	width: 2.75vw;
 	-moz-transform: rotate(15deg);
 	-webkit-transform: rotate(15deg);
 	transform: rotate(15deg);
-	top: 45%;
+	top: 1.8vw;
 	right: 0.2vw;
 	z-index: 1;
 }
@@ -343,15 +342,15 @@ body {
 }
 
 .tail-bottom:before {
-	clip: rect(0, 6.5vw, 2vw, 0.3vw);
+	clip: rect(0, 6.5vw, 1.5vw, 0.3vw);
 	height: 4vw;
 	width: 8vw;
 	right: 0;
-	top: 2.35vw;
+	top: 2.175vw;
 }
 
 .tail-bottom:after {
-	clip: rect(0, 3.5vw, 2vw, 0.3vw);
+	clip: rect(0, 3.4vw, 1.2vw, 0.4vw);
 	height: 4vw;
 	width: 8vw;
 	right: 0;
@@ -373,7 +372,7 @@ body {
 }
 
 .tail-top:before {
-	clip: rect(0, 3.3vw, 1vw, 0.3vw);
+	clip: rect(0, 3.3vw, 0.7vw, 0.3vw);
 	height: 2vw;
 	width: 4vw;
 	right: 45%;
