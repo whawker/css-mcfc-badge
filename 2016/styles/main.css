@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Montserrat, Arial, sans-serif;
-    font-size: 5.5vw;
+    font-size: 5.5vmin;
     color: #002E5F;
 }
 
@@ -14,43 +14,43 @@ body {
 }
 
 #badge {
-    border: 1vw solid #6AAEDF;
+    border: 1vmin solid #6AAEDF;
     border-radius: 50%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vw;
-    padding: 1.5vw;
+    height: 50vmin;
+    padding: 1.5vmin;
     position: relative;
-    width: 50vw;
+    width: 50vmin;
     z-index: 1;
-    max-width: 85vh;
-    max-height: 85vh;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 #badge:before {
     content: ' ';
-    border: 1vw solid #002E5F;
+    border: 1vmin solid #002E5F;
     border-radius: 50%;
     position: absolute;
-    top: -1vw;
-    left: -1vw;
-    right: -1vw;
-    bottom: -1vw;
+    top: -1vmin;
+    left: -1vmin;
+    right: -1vmin;
+    bottom: -1vmin;
     background: #6AAEDF;
 }
 
 #badge:after {
     content: ' ';
     background: #FFF;
-    border: 1vw solid #002E5F;
+    border: 1vmin solid #002E5F;
     border-radius: 50%;
     position: absolute;
-    top: 0.5vw;
-    left: 0.5vw;
-    right: 0.5vw;
-    bottom: 0.5vw;
+    top: 0.5vmin;
+    left: 0.5vmin;
+    right: 0.5vmin;
+    bottom: 0.5vmin;
 }
 
 p {
@@ -63,7 +63,13 @@ p {
     z-index: 2;
 }
 
-#manchester {position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+#manchester {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 #manchester span {
     box-sizing: border-box;
@@ -72,7 +78,7 @@ p {
     position: absolute;
     bottom: 50%;
     left: 0;
-    padding-top: 1.25vw;
+    padding-top: 1.25vmin;
     transform-origin: bottom center;
     width: 100%;
     z-index: 2;
@@ -80,17 +86,17 @@ p {
 
 #manchester .m { transform: rotate(-65deg); }
 #manchester .a { transform: rotate(-48deg); }
-#manchester .n { transform: rotate(-32deg); } 
-#manchester .c { transform: rotate(-17deg); } 
-#manchester .h { transform: rotate(-2deg); } 
-#manchester .e1 {transform: rotate(13deg);}
-#manchester .s {transform: rotate(27deg);} 
-#manchester .t {transform: rotate(39deg);} 
-#manchester .e2 {transform: rotate(52deg);}
-#manchester .r {transform: rotate(67deg);}
+#manchester .n { transform: rotate(-32deg); }
+#manchester .c { transform: rotate(-17deg); }
+#manchester .h { transform: rotate(-2deg); }
+#manchester .e1 { transform: rotate(13deg); }
+#manchester .s { transform: rotate(27deg); }
+#manchester .t { transform: rotate(39deg); }
+#manchester .e2 { transform: rotate(52deg); }
+#manchester .r { transform: rotate(67deg); }
 
 .year {
-    font-size: 3.5vw;
+    font-size: 3.5vmin;
     color: #6AAEDF;
     position: relative;
     z-index: 2;
@@ -111,12 +117,12 @@ p {
     height: 69%;
     position: relative;
     z-index: 3;
-    margin-bottom: 1vw;
+    margin-bottom: 1vmin;
 }
 
 #badge-inner:before {
     content: ' ';
-    border: 1vw solid #002E5F;
+    border: 1vmin solid #002E5F;
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -128,17 +134,17 @@ p {
 #badge-inner:after {
     content: ' ';
     background: #6AAEDF;
-    border: 0.5vw solid #fff;
+    border: 0.5vmin solid #fff;
     border-radius: 50%;
     position: absolute;
-    top: 1vw;
-    left: 1vw;
-    right: 1vw;
-    bottom: 1vw;
+    top: 1vmin;
+    left: 1vmin;
+    right: 1vmin;
+    bottom: 1vmin;
 }
 
 .crest {
-    border: 1vw solid #002E5F;
+    border: 1vmin solid #002E5F;
     border-radius: 50%;
     position: absolute;
     z-index: 5;
@@ -257,12 +263,12 @@ p {
 .petal:before {
     content: ' ';
     background: #E82F26;
-    border: 0.5vw solid #002E5F;
+    border: 0.5vmin solid #002E5F;
     position: absolute;
     top: -10%;
     left: 71%;
-    width: 1vw;
-    height: 1vw;
+    width: 1vmin;
+    height: 1vmin;
     transform: rotateZ(35deg) skewY(10deg);
     z-index: 7;
 }
@@ -281,20 +287,20 @@ p {
 .petal-half .outer:before {
     content: ' ';
     background: #E82F26;
-    border: 0.5vw solid #002E5F;
+    border: 0.5vmin solid #002E5F;
     border-radius: 50%;
     position: absolute;
     top: 0;
     bottom: -50%;
     left: 25%;
-    right: -0.25vw;
+    right: -0.25vmin;
     -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 10% 100%, 10% 30%, 20% 30%);
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 10% 100%, 10% 30%, 20% 30%);
 }
 
 .petal-half .outer:after {
     content: ' ';
-    border: 0.5vw solid #002E5F;
+    border: 0.5vmin solid #002E5F;
     border-radius: 75% 10%;
     position: absolute;
     top: 0;
@@ -307,7 +313,7 @@ p {
 
 .petal-half .inner:before {
     content: ' ';
-    border: 0.25vw solid #002E5F;
+    border: 0.25vmin solid #002E5F;
     border-radius: 50%;
     position: absolute;
     top: 23%;
@@ -320,7 +326,7 @@ p {
 
 .petal-half .inner:after {
     content: ' ';
-    border: 0.25vw solid #002E5F;
+    border: 0.25vmin solid #002E5F;
     border-radius: 70% 10%;
     position: absolute;
     top: 10%;
@@ -339,12 +345,12 @@ p {
 
 .stigma {
     background: #FAC458;
-    border: 0.5vw solid #002E5F;
+    border: 0.5vmin solid #002E5F;
     border-radius: 50%;
-    height: 1.25vw;
+    height: 1.25vmin;
     position: absolute;
-    top: calc(50% - 1.15vw);
-    left: calc(50% - 1.15vw);
-    width: 1.25vw;
+    top: calc(50% - 1.15vmin);
+    left: calc(50% - 1.15vmin);
+    width: 1.25vmin;
     z-index: 9;
 }
